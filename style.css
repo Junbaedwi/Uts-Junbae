@@ -7,7 +7,6 @@ body {
   line-height: 1.5;
 }
 
-/* ===== LAYOUT SMARTPHONE (default): semua blok 100%, tersusun ke bawah ===== */
 .wrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -61,7 +60,6 @@ article li { margin-bottom: 6px; }
 address { font-style: normal; }
 footer .nama-web { text-align: left; }
 
-/* ===== TABLET PORTRAIT (>= 600px): nav jadi menu horizontal, semua blok 100% ===== */
 @media (min-width: 600px) {
   nav { max-height: none; overflow: visible; }
   nav ul { display: flex; flex-wrap: wrap; gap: 6px 16px; }
@@ -78,7 +76,6 @@ footer .nama-web { text-align: left; }
   footer .nama-web { text-align: right; }
 }
 
-/* ===== TABLET LANDSCAPE (>= 900px): nav 25% | section 75%, aside & footer 100% ===== */
 @media (min-width: 900px) {
   .wrapper {
     grid-template-columns: 25% 1fr;
@@ -94,7 +91,6 @@ footer .nama-web { text-align: left; }
   section { min-height: 300px; }
 }
 
-/* ===== DESKTOP (>= 1200px): nav 25% | section 50% | aside 25% ===== */
 @media (min-width: 1200px) {
   .wrapper {
     grid-template-columns: 25% 1fr 25%;
